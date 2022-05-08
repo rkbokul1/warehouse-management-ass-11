@@ -9,22 +9,16 @@ const Products = () => {
 
     return (
 
-        <div id='inventory'>
-            <Header/>
-
-            <div className='container pt-5 mt-5'>
-                <h2>Inventory</h2>
-                <div className="row g-4 mt-2">
-                    {
-                        stock.slice(0, 6).map(stck => <Product
-                            key={stck.id}
-                            stck={stck}
-                        ></Product>)
-                    }
-                </div>
+        <div className='container mt-4'>
+            <h2>Inventory</h2>
+            <div className="row g-4 mt-2">
+                {
+                    stock.slice(0, 6).map(stck => <Product
+                        key={stck.id}
+                        stck={stck}
+                    ></Product>)
+                }
             </div>
-
-            <Footer />
         </div>
     );
 };

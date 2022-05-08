@@ -1,8 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import first from '../../images/Banner/banner-first.jfif'
-import second from '../../images/Banner/banner-second.jfif'
-import third from '../../images/Banner/banner-third.jfif'
+import second from '../../images/Banner/banner-second.jfif';
+
 
 const Banner = () => {
     return (
@@ -11,7 +10,7 @@ const Banner = () => {
                 <Carousel.Item interval={1000}>
                     <img
                         className="d-block w-100"
-                        src={first}
+                        src={second}
                         alt="First slide"
                     />
                     <Carousel.Caption>
@@ -33,7 +32,7 @@ const Banner = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={third}
+                        src={second}
                         alt="Third slide"
                     />
                     <Carousel.Caption>

@@ -17,7 +17,7 @@ const Header = () => {
                             <Nav.Link as={Link} className='text-white' to="/home">Home</Nav.Link>
                             <Nav.Link as={Link} className='text-white' to="/inventory">Inventory</Nav.Link>
                             <Nav.Link as={Link} className='text-white' to="/home">About</Nav.Link>
-                            <Nav.Link as={Link} className='text-white' to="/home">Login</Nav.Link>
+                            <Nav.Link as={Link} className='text-white' to="/signup">Login</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

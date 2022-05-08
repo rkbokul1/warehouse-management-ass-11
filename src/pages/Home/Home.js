@@ -1,9 +1,13 @@
-import React from 'react';
+import Footer from '../../sharedPage/Footer/Footer';
+import Header from '../../sharedPage/Header/Header';
 
 const Home = () => {
     return (
         <div>
-            <h2>This is home page</h2>
+            <Header />
+
+            <Footer />
+
         </div>
     );
 };

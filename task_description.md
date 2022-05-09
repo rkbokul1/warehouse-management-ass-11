@@ -1,7 +1,7 @@
 ## Task Description: 
-Our company focuses on a warehouse management (inventory management) website. Currently, we are looking for a front-end web developer to build a full-stack website using `React`, `firebase`, `react router`, `node`, `express`, `mongodb` etc. 
+<!-- Our company focuses on a warehouse management (inventory management) website. Currently, we are looking for a front-end web developer to build a full-stack website using `React`, `firebase`, `react router`, `node`, `express`, `mongodb` etc.  -->
 
-We have a sample task for you.
+<!-- We have a sample task for you. -->
 
 ## Website Purpose:
 <!-- 
@@ -19,7 +19,7 @@ We have a sample task for you.
 
 2. Add two extra sections on the home page and the four sections mentioned above. Tips: This is the place to shine. Add something different and unique to make your website looks different than others. And Make them relevant to your website.
 
-3. You will have six items in the inventory items section. You can put one or more items in a row based on your design. Each article should have a relevant name, image, short description, price, quantity, supplier name, and an update button (button could say: update or manage or stock update, etc.). 
+<!-- 3. You will have six items in the inventory items section. You can put one or more items in a row based on your design. Each article should have a relevant name, image, short description, price, quantity, supplier name, and an update button (button could say: update or manage or stock update, etc.).  --> backend
 
 <!-- 4. Clicking on the button will take the user to the `inventory/:id` route. This route will be a private/protected route. Please make sure that the private route redirects to the login page if the user is not logged in. After login, the user will be redirected to the page he/she wanted to go to. Also, after reloading the page of a private route, the user is not redirected to the login page. -->
 
@@ -31,9 +31,9 @@ We have a sample task for you.
 
 8. ON the Manage Inventories page, there will be a button named `add new item`. You can change the name of the button if you want. You will be taken to the add inventory item page by clicking on this button. There will be able to add a new inventory item. Feel free to use, react hook form or html5 form. On this page, you can put an input field to put an image url. (For simplicity, you can upload the image to imgbb or other images hosting website and then put the url on the input field)
 
-9. Implement email/password-based authentication and at least one social login(google, facebook, github, etc.) authentication. Once a user is logged in, the logout/sign-out button should appear on the header, signing out the user once clicked.
+<!-- 9. Implement email/password-based authentication and at least one social login(google, facebook, github, etc.) authentication. Once a user is logged in, the logout/sign-out button should appear on the header, signing out the user once clicked. -->
 
-10. If a user is logged in, he/she will see more options like `Manage Items`, `Add Item`, `My items`, `Logout`. Based on your website idea, you can change the name of these menu items. 
+<!-- 10. If a user is logged in, he/she will see more options like `Manage Items`, `Add Item`, `My items`, `Logout`. Based on your website idea, you can change the name of these menu items.  -->
 
 11. On the My Items page, the logged-in user will see only his/her Items. If the user wants, he/she should be able to cancel/delete any item. Ask for a confirmation message before deleting or canceling an item. Using browser confirmation dialog is ok. So, you will be able to delete an item either from the `Manage Inventories` page also, from the `My Items` page.
 

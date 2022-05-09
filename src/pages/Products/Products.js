@@ -1,7 +1,5 @@
 import React from 'react';
 import useStocks from '../../Hooks/useStocks';
-import Footer from '../../sharedPage/Footer/Footer';
-import Header from '../../sharedPage/Header/Header';
 import Product from '../Product/Product';
 
 const Products = () => {
@@ -9,7 +7,7 @@ const Products = () => {
 
     return (
 
-        <div className='container mt-4'>
+        <div className='container mt-4 pt-5'>
             <h2>Inventory</h2>
             <div className="row g-4 mt-2">
                 {

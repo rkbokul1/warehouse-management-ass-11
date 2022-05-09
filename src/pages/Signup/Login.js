@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import { Link } from 'react-router-dom';
+import { useAuthState, useSignInWithEmailAndPassword, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { Link, useNavigate } from 'react-router-dom';
 import google from '../../images/icon/google.png';
 import github from '../../images/icon/github.png';
 import auth from '../../Hooks/firebase.init';
@@ -11,10 +11,11 @@ const Login = () => {
 
     const [signInWithGoogle] = useSignInWithGoogle(auth);
     const [signInWithGithub] = useSignInWithGithub(auth);
-    const [signInWithEmailAndPassword] = useSignInWithEmailAndPassword(auth);
-    
+    const [signInWithEmailAndPassword] = useSignInWithEmailAndPassword(auth);    
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [user] = useAuthState(auth);
+    const navigate = useNavigate();
 
     const handleLogin = e =>{
         e.preventDefault();
@@ -28,11 +29,16 @@ const Login = () => {
     const handleGithubSignIn = () =>{
         signInWithGithub();
     }
+    
+    if(user){
+        navigate('/home')
+    }
 
     return (
         <div className='w-50 mx-auto pt-5 mt-5'>
             <h2>Login Page</h2>
             <Container>
+
                 <Form onSubmit={handleLogin} className='text-start'>
 
                     <Form.Group className="mb-3" controlId="formBasicName">

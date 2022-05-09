@@ -1,7 +1,7 @@
 import { Button, Container, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../Hooks/firebase.init';
-import { useCreateUserWithEmailAndPassword, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useAuthState, useCreateUserWithEmailAndPassword, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import google from '../../images/icon/google.png';
 import github from '../../images/icon/github.png';
 import { useState } from 'react';
@@ -12,8 +12,12 @@ const Signup = () => {
     const [createUserWithEmailAndPassword] = useCreateUserWithEmailAndPassword(auth);
     const [signInWithGoogle] = useSignInWithGoogle(auth);
     const [signInWithGithub] = useSignInWithGithub(auth);
+
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    
+    const [user] = useAuthState(auth);
+    const navigate = useNavigate();
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -26,6 +30,10 @@ const Signup = () => {
 
     const handleGithubSignIn = () =>{
         signInWithGithub();
+    }
+
+    if(user){
+        navigate('/home')
     }
 
     return (

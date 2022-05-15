@@ -8,8 +8,8 @@ import Footer from './sharedPage/Footer/Footer';
 import Header from './sharedPage/Header/Header';
 import Signup from './pages/Signup/Signup';
 import Login from './pages/Signup/Login';
-import RequireAuth from './Hooks/RequireAuth';
 import Blog from './pages/Blog/Blog';
+import RequireAuth  from '../src/Hooks/RequireAuth';
 
 function App() {
   return (
@@ -20,7 +20,11 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/home' element={<Home />}></Route>
-        <Route path='/inventory' element={<Products />}></Route>
+        <Route path='/inventory' element={
+          <RequireAuth>
+            <Products />
+          </RequireAuth>
+        }></Route>
         <Route path='/inventory/:inventoryId' element={<Inventory />}></Route>
         <Route path='/blog' element={<Blog />}></Route>
 

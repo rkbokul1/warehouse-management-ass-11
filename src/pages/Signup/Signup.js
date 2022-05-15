@@ -1,6 +1,6 @@
 import { Button, Container, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
-import auth from '../../firebase.init';
+import auth from '../../Hooks/firebase.init';
 import { useAuthState, useCreateUserWithEmailAndPassword, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import google from '../../images/icon/google.png';
 import github from '../../images/icon/github.png';

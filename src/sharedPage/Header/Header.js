@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
-import auth from '../../Hooks/firebase.init';
+import auth from '../../firebase.init';
 import { signOut } from 'firebase/auth';
 import CustomLink from '../../Hooks/CustomLink';
 
@@ -17,7 +17,7 @@ const Header = () => {
     return (
         <div id='home'>
 
-            <Navbar className='bg-dark' expand="lg" sticky='top'>
+            <Navbar className='bg-dark' expand="lg" fixed='top'>
                 <Container>
                     <Navbar.Brand as={Link} className='text-white' to="/">BD-STOCK</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -34,7 +34,7 @@ const Header = () => {
                                         <Nav.Link as={CustomLink} className='text-white' to="/">Manage Item</Nav.Link>
                                         <Nav.Link as={CustomLink} className='text-white' to="/">Add Item</Nav.Link>
                                         <Nav.Link as={CustomLink} className='text-white' to="/">My Items</Nav.Link>
-                                        <Nav.Link as={CustomLink} className='text-white' to="/">Logout ({user.uid.slice(0, 5)})</Nav.Link>
+                                        <Nav.Link as={CustomLink} onClick={handleSignOut} className='text-white' to="/">Logout ({user.uid.slice(0, 5)})</Nav.Link>
                                     </>
                                     :
                                     <Nav.Link as={CustomLink} className='text-white' to="/signup">Login</Nav.Link>

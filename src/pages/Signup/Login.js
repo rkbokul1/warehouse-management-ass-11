@@ -4,7 +4,7 @@ import { useAuthState, useSignInWithEmailAndPassword, useSignInWithGithub, useSi
 import { Link, useNavigate } from 'react-router-dom';
 import google from '../../images/icon/google.png';
 import github from '../../images/icon/github.png';
-import auth from '../../Hooks/firebase.init';
+import auth from '../../firebase.init';
 
 
 const Login = () => {
@@ -31,7 +31,7 @@ const Login = () => {
     }
     
     if(user){
-        navigate('/home')
+        navigate('/')
     }
 
     return (

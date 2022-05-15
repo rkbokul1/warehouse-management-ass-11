@@ -5,7 +5,7 @@ const useStocks = () =>{
 const [stock, setStock] = useState([]);
 
 useEffect( () =>{
-    fetch('stock.json')
+    fetch('http://localhost:5000/stock')
     .then(res => res.json())
     .then(data => setStock(data))
 },[])

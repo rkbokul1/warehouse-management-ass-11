@@ -12,7 +12,7 @@ const Products = () => {
             <div className="row g-4 mt-2">
                 {
                     stock.slice(0, 6).map(stck => <Product
-                        key={stck.id}
+                        key={stck._id}
                         stck={stck}
                     ></Product>)
                 }

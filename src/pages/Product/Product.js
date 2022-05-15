@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Product = (props) => {
 
-    const { name, img, des, price } = props.stck;    
+    const { _id, name, img, des, price } = props.stck;    
     const navigate = useNavigate();
 
     const handleInventory = id =>{
@@ -27,7 +27,7 @@ const Product = (props) => {
                 </Card.Body>
 
                 <Card.Footer>
-                    <button onClick={() => handleInventory(name)} className='btn btn-primary'>Manage</button>
+                    <button onClick={() => handleInventory(_id)} className='btn btn-primary'>Manage</button>
                 </Card.Footer>
             </Card>
         </div>

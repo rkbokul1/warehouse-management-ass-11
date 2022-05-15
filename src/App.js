@@ -9,6 +9,7 @@ import Header from './sharedPage/Header/Header';
 import Signup from './pages/Signup/Signup';
 import Login from './pages/Signup/Login';
 import RequireAuth from './Hooks/RequireAuth';
+import Blog from './pages/Blog/Blog';
 
 function App() {
   return (
@@ -20,8 +21,8 @@ function App() {
         <Route path='/' element={<Home />}></Route>
         <Route path='/home' element={<Home />}></Route>
         <Route path='/inventory' element={<Products />}></Route>
-
         <Route path='/inventory/:inventoryId' element={<Inventory />}></Route>
+        <Route path='/blog' element={<Blog />}></Route>
 
         <Route path='/signup' element={<Signup />}></Route>
         <Route path='/login' element={<Login />}></Route>

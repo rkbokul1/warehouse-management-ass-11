@@ -38,8 +38,8 @@
 11. On the My Items page, the logged-in user will see only his/her Items. If the user wants, he/she should be able to cancel/delete any item. Ask for a confirmation message before deleting or canceling an item. Using browser confirmation dialog is ok. So, you will be able to delete an item either from the `Manage Inventories` page also, from the `My Items` page.
 
 
-12. No Fake data (data must be hosted on the database). Database could be mongodb atlas or any other noSQL database.
-13. Add two more routes. one route will be `blogs`. You will need to answer at least three questions on the blog page. This won't be a protected route. We recommend answering all four questions.
+<!-- 12. No Fake data (data must be hosted on the database). Database could be mongodb atlas or any other noSQL database. -->
+<!-- 13. Add two more routes. one route will be `blogs`. You will need to answer at least three questions on the blog page. This won't be a protected route. We recommend answering all four questions.
 
     13.1 Difference between `javascript` and `nodejs`
     
@@ -47,9 +47,9 @@
 
     13.3 Differences between `sql` and `nosql` databases.
 
-    13.4 What is the purpose of `jwt` and how does it work
+    13.4 What is the purpose of `jwt` and how does it work -->
 
-14. Create a meaningful 404 page (not found page)
+<!-- 14. Create a meaningful 404 page (not found page) -->
 
 ### Bonus: 
 1. Display error when user email address or password don't match. 

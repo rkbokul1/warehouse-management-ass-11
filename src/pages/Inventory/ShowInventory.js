@@ -7,7 +7,7 @@ const ShowInventory = (props) => {
     const [increase, setIncrease] = useState(available);
     console.log(increase);
 
-    const url = `http://localhost:5000/stock/${_id}`;
+    const url = `https://salty-tor-65153.herokuapp.com/stock/${_id}`;
 
     const handleAddStock = event => {
         event.preventDefault();

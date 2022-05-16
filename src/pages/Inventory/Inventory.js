@@ -6,7 +6,7 @@ const Inventory = () => {
     const { inventoryId } = useParams();
 
     const [stock, setStock] = useState({})
-    const url = `http://localhost:5000/stock/${inventoryId}`;
+    const url = `https://salty-tor-65153.herokuapp.com/stock/${inventoryId}`;
     
     useEffect( () =>{
         fetch(url)

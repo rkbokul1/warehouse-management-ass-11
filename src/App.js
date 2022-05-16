@@ -27,11 +27,8 @@ function App() {
         }></Route>
         <Route path='/inventory/:inventoryId' element={<Inventory />}></Route>
         <Route path='/blog' element={<Blog />}></Route>
-
         <Route path='/signup' element={<Signup />}></Route>
         <Route path='/login' element={<Login />}></Route>
-
-
         <Route path='*' element={<Error />}></Route>
       </Routes>
 
